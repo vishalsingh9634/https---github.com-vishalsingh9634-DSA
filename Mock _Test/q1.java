@@ -83,8 +83,66 @@ public class q1 {
         else{
             System.out.println("number is not armstrong :"+original);
         }
+    }
+
+    public static int getfact(int n){
+        if(n == 1){
+            return 1;
+        }
+        return n * getfact(n - 1);
+    }
+
+    public static boolean isstrongno(int num){
+        int sum = 0;
+        int copy = 0;
+        while(num>0){
+            sum += getfact(num % 10);
+            num /= 10;
+        }
+        return sum == copy;
 
     }
+
+     public static boolean prime_num(int num){
+        if(num==2){
+            return true;
+        }
+        for(int i=2;i<=Math.sqrt(num);i++){
+            if(num%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    public static void primeinrange(int num){
+        System.out.print("prime_no:");
+       for(int i=2;i<=num;i++){    
+        if(prime_num(i)){
+            System.out.print(" "+i);
+        }
+       }
+       System.out.println();
+    }
+
+    public static void pattern(int num){
+        for(int i=1;i<=num;i++){
+            for(int j=1;j<=i;j++ ){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+
+    public static int single(int num){
+        if(num%9==0){
+            return 9;
+        }
+        return num%9;
+
+    }
+
 
     public static void main(String[] args) {
             int sum=sum(1234);
@@ -102,7 +160,20 @@ public class q1 {
             System.out.println(flag);
 
             armstrongno(371);
+
+            boolean isstrong = isstrongno(145);
+            System.out.println(isstrong);
+
+            primeinrange(10);
+
+
+            pattern(4);
+
+            int digit=single(278);
+            System.out.println(digit);
+
             
 	}
 }
+
 
