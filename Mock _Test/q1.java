@@ -157,22 +157,21 @@ public class q1 {
            palindrom(1221);
 
            boolean flag =isprime(num);
-            System.out.println(flag);
+           System.out.println(flag);
 
-            armstrongno(371);
+           armstrongno(371);
 
-            boolean isstrong = isstrongno(145);
-            System.out.println(isstrong);
+           boolean isstrong = isstrongno(145);
+           System.out.println(isstrong);
 
-            primeinrange(10);
+           primeinrange(10);
 
+           pattern(4);
 
-            pattern(4);
-
-            int digit=single(278);
-            System.out.println(digit);
-
-            
+           int digit=single(278);
+           System.out.println(digit); 
+           
+           
 	}
 }
 
