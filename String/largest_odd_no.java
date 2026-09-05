@@ -2,15 +2,14 @@ public class largest_odd_no {
     public static String largest_odd(String s){
         int end=s.length()-1;
         while(end>0){
-            int digit=s.charAt(end)-'0';
+            int digit=s.charAt(end);
             if(digit%2==1){
                 break;
             }
             end--;
             if(end<0){
                 return "";
-            }
-            
+            }            
         }
         int start=0;
             while(s.charAt(start)=='0'){
@@ -23,3 +22,4 @@ public class largest_odd_no {
         System.out.println(largest_odd(s));
     }
 }
+
