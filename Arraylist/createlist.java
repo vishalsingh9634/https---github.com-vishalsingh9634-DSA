@@ -1,6 +1,10 @@
 import java.util.*;
 public class createlist{
-
+    public static int getelement(ArrayList<Integer> list) {
+        System.out.println("get Element of index 2:");
+        return list.get(2);
+        
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         ArrayList<Integer> list=new ArrayList<>();
@@ -12,6 +16,7 @@ public class createlist{
             int element=sc.nextInt();
             list.add(element);
         }
-        System.out.println("Arraylist"+list);
+        System.out.println(list);
+        System.out.println(getelement(list));
     }
 }
