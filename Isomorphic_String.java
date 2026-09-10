@@ -4,7 +4,7 @@ public static boolean isomorphic(String s,String t){
         return false;
     }
         int []map1=new int[256];
-        int []map2=new int [256];
+        int []map2=new int[256];
     for(int i=0;i<s.length();i++){
         char s1=s.charAt(i);
         char t1=t.charAt(i);
