@@ -1,8 +1,11 @@
 import java.util.*;
 public class createlist{
-    public static int getelement(ArrayList<Integer> list) {
+    public static void getelement(ArrayList<Integer> list) {
         System.out.println("get Element of index 2:");
-        return list.get(2);
+        System.out.println(list.get(2));
+        System.out.println("remove the element of index 1:");
+        System.out.println(list.remove(1));
+        System.out.println(list);
         
     }
     public static void main(String[] args) {
@@ -17,6 +20,6 @@ public class createlist{
             list.add(element);
         }
         System.out.println(list);
-        System.out.println(getelement(list));
+        getelement(list);
     }
 }
